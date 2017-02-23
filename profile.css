@@ -4,8 +4,11 @@
 }
 
 body {
-    background-image: url("img/space2.png");
+    background-image: url("img/bk.png");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
 nav ul li {
@@ -25,8 +28,3 @@ nav ul li a.selected {
     color: #fff;
 }
 
-h1 {
-    color: #fff;
-    text-align: center;
-    padding: 300px;
-}
