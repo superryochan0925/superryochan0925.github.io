@@ -42,9 +42,12 @@ nav ul li a.selected {
     text-shadow: #80207b 0px 0px 10px;
 }
 
+.media-body{
+    width: 00px;
+}
+
 img {
     width: 250px;
     height: 150px;
-    
+    border: 2px #80207b solid;
 }
-
