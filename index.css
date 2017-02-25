@@ -8,9 +8,20 @@ body {
     background-size: cover;
 }
 
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    width: 520px;
+    float: right;
+    margin: 15px;
+}
+
 nav ul li {
-    display: inline-block;
+    display: block;
     margin: 30px 20px;
+    float: left;
 }
 
 nav ul li a {
