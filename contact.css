@@ -4,9 +4,56 @@
 }
 
 body {
-    background-image: url("img/pd.png");
+    background-image: url("img/space2.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 800px;
+}
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    width: 520px;
+    float: right;
+    margin: 15px;
+}
+
+nav ul li {
+    display: block;
+    margin: 30px 20px;
+    float: left;
+}
+
+nav ul li a {
+    color: #80207b;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+}
+
+nav ul li a.selected {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding: 300px;
+    margin: -200px;
+}
+form {
+    color: #fff;
+    text-align: center;
+    padding: 150px;
+    margin: -400px;
+}
+input {
+    color: #000000;
+}
+
+div{
+    line-height: 25px;
 }

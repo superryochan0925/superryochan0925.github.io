@@ -36,8 +36,16 @@ nav ul li a.selected {
     color: #fff;
 }
 
-h1 {
+p {
     color: #fff;
     text-align: center;
     padding: 300px;
+    font-size: 40px;
+}
+
+.textSplitLoad {
+    display: none;
+}
+.split {
+    visibility: hidden;
 }

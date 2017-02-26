@@ -11,6 +11,35 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function(){
+    var setElm = $('.split'),
+    delaySpeed = 200,
+    fadeSpeed = 0;
+ 
+    setText = setElm.html();
+ 
+    setElm.css({visibility:'visible'}).children().addBack().contents().each(function(){
+        var elmThis = $(this);
+        if (this.nodeType == 3) {
+            var $this = $(this);
+            $this.replaceWith($this.text().replace(/(\S)/g, '<span class="textSplitLoad">$&</span>'));
+        }
+    });
+    $(window).load(function(){
+        splitLength = $('.textSplitLoad').length;
+        setElm.find('.textSplitLoad').each(function(i){
+            splitThis = $(this);
+            splitTxt = splitThis.text();
+            splitThis.delay(i*(delaySpeed)).css({display:'inline-block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+        });
+        setTimeout(function(){
+                setElm.html(setText);
+        },splitLength*delaySpeed+fadeSpeed);
+    });
+});
+</script>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -25,7 +54,7 @@
       </nav>
     </header>
     <div class="container">
-      <h1>RYO TAKEDA  PORTFOLIO</h1>
+      <p class="split">RYO TAKEDA  PORTFOLIO</p>
     </div>
   </body>
 </html>
